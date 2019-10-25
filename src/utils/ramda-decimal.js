@@ -14,9 +14,19 @@ RD.lt = R.curry(
     .lt(y),
 );
 
+RD.lte = R.curry(
+  (x, y) => RD.decimal(x)
+    .lte(y),
+);
+
 RD.gt = R.curry(
   (x, y) => RD.decimal(x)
     .gt(y),
+);
+
+RD.equals = R.curry(
+  (x, y) => RD.decimal(x)
+    .equals(y),
 );
 
 RD.fixed = R.curry(
